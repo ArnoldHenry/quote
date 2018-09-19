@@ -11,29 +11,29 @@
 <div class="col-3" >
  <label for="author">author:</label>
  <input type="text" class="form-control" id="author" [(ngModel)]="myQuote.author" name="author" #author="ngModel" required>
- <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+ <!-- <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
    Authors name is required
- </div>
+ </div> -->
  </div>
 </div>
 
 <div class="form-group">
  <div class="col-5" >
  <label for="thequote">Quote:</label>
- <textarea type="text" rows="5" class="form-control" placeholder="Enter Quote" name="quote" required [(ngModel)]="myQuote.quote" #quote="ngModel"></textarea>
- <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+ <textarea type="text" rows="5" class="form-control" placeholder="Enter Quote" name="quote" [(ngModel)]="myQuote.quote" #quote="ngModel" required></textarea>
+ <!-- <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
    Quote is required
- </div>
+ </div> -->
 </div>
 </div>
 
 <div class="form-group">
  <div class="col-3" >
    <label for="myname">Name:</label>
-   <input type="text" class="form-control" placeholder="Enter your name" name="myname" required [(ngModel)]="myQuote.myname" #myname="ngModel">
-   <div [hidden]="myname.valid || myname.pristine" class="alert alert-danger">
+   <input type="text" class="form-control" placeholder="Enter your name" name="myname" [(ngModel)]="myQuote.myname" #myname="ngModel" required>
+   <!-- <div [hidden]="myname.valid || myname.pristine" class="alert alert-danger">
      Your name is required
-   </div>
+   </div> -->
    </div>
  </div>
 

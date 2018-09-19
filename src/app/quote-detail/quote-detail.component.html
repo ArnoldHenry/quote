@@ -1,9 +1,16 @@
-<h1>Hello</h1>
 <app-quotes (emitQuote)='addNewQuote($event)'></app-quotes>
 
-<div class="row"*ngFor="let quote of quotes;let i =index">
+<div class="row"*ngFor="let quote of quotes;let i ='index'">
   <ul>
-   <li>
+    
+   <li class="mylist">
+     <p>Quote No. {{quote.id}}</p>
+      <p>Author --- {{quote.author}}</p>
+     
+     <p>Quote ---  {{quote.quote}}</p>
+    
+     <p>Publisher --- {{quote.myname}}</p>
+     
       <!-- <app-quotedetails [quote]='quote' (isDone)='delete($event,i)'></app-quotedetails>  </li> -->
 
    </ul>

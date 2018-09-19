@@ -4,7 +4,7 @@ export class Quoteproperties {
     // public downv:number
     // public mydate:Date
 
-    constructor( public author:string,public quote:string,public myname:string){
+    constructor(public id:number, public author:string,public quote:string,public myname:string){
         // this.upv=0
         // this.downv=0
         // this.mydate= new Date()

@@ -10,12 +10,12 @@ export class QuoteDetailComponent implements OnInit {
 
   // @Input() quote:Quoteproperties;
   quotes=[
-    new Quoteproperties("Life is a cycle","anonymous","me")
+    new Quoteproperties(0,"Arnold","life is short","Henry")
   ]
 
   addNewQuote(quoteproperties){
     let quoteLength = this.quotes.length;
-    quoteproperties.author=quoteLength + 1;
+    quoteproperties.id=quoteLength + 1;
     this.quotes.push(quoteproperties);
     console.log("issa done");
     
